@@ -13,7 +13,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import androidx.gridlayout.widget.GridLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -115,7 +114,7 @@ public class MyMallAdapter extends RecyclerView.Adapter {
         if(lastPos<position) {
             Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.fade_in);
             holder.itemView.setAnimation(animation);
-            lastPos=position;
+            lastPos=holder.getAdapterPosition();
         }
     }
 

@@ -144,7 +144,7 @@ public class DBquerries {
                                                 queryDocumentSnapshot.get("product_ID_"+x).toString()
                                                 ,queryDocumentSnapshot.get("product_image_"+x).toString()
                                                 ,queryDocumentSnapshot.get("product_full_title_"+x).toString()
-                                                ,(long)queryDocumentSnapshot.get("free_coupans_"+x)
+                                                ,(long)queryDocumentSnapshot.get("free_coupens_"+x)
                                                 ,queryDocumentSnapshot.get("average_rating_"+x).toString()
                                                 ,(long)queryDocumentSnapshot.get("total_ratings_"+x)
                                                 ,queryDocumentSnapshot.get("product_price_"+x).toString()

@@ -71,7 +71,7 @@ public class WishlistAdapter extends RecyclerView.Adapter<WishlistAdapter.ViewHo
         if(lastpos<position) {
             Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.fade_in);
             holder.itemView.setAnimation(animation);
-            lastpos=position;
+            lastpos=holder.getAdapterPosition();
         }
     }
 
