@@ -62,7 +62,7 @@
             android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:src="@drawable/star_black_"
-            android:tint="#000000" />
+            app:tint="#000000" />
 
     </LinearLayout>
 
@@ -429,7 +429,7 @@
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:src="@drawable/star_black_"
-            android:tint="#C7BEBE"/>
+            app:tint="#C7BEBE"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -437,7 +437,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
-            android:tint="#C7BEBE"
+            app:tint="#C7BEBE"
             android:src="@drawable/star_black_" />
 
         <ImageView
@@ -446,7 +446,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
-            android:tint="#C7BEBE"
+            app:tint="#C7BEBE"
             android:src="@drawable/star_black_" />
 
         <ImageView
@@ -455,7 +455,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
-            android:tint="#C7BEBE"
+            app:tint="#C7BEBE"
             android:src="@drawable/star_black_" />
 
         <ImageView
@@ -464,7 +464,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
-            android:tint="#C7BEBE"
+            app:tint="#C7BEBE"
             android:src="@drawable/star_black_" />
 
     </LinearLayout>

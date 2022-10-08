@@ -13,7 +13,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@drawable/ic_launcher_foreground</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <style name="RedProgressBar" parent="Theme.AppCompat.Light.NoActionBar">
