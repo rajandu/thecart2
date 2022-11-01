@@ -3,6 +3,9 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url "https://plugins.gradle.org/m2/"}
     }
 }
 dependencyResolutionManagement {
@@ -10,9 +13,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {url "https://jitpack.io"}
         jcenter()
-    }
-}
+        maven {url "https://jitpack.io"}
+
+}}
+
 rootProject.name = "thecart"
 include ':app'

@@ -114,7 +114,7 @@ public class OTPverificationActivity extends AppCompatActivity {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new HashMap<String, String>();
-                headers.put("authorization","B5WzCKYbZuvV7tdGwga2MDs431Oj8xIlciqA9USFQeonfkh6mROPywVDBz6qv2muHjaT1Afibx9QIsRX");
+                headers.put("authorization","LmeRvxdjU90MWC43VftguQbYNqIOwFJHa8hoDiS5XnkAz6ZpBEr2DgekR7pu6iS4zvcXwbHY5MxByaEq");
 
                 return headers;
 

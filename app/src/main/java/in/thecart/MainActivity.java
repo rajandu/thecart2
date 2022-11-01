@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(id.toolbar);
         actionbarLogo=findViewById(id.action_bar_logo);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         window=getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);

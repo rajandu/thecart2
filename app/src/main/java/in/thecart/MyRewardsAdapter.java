@@ -109,7 +109,7 @@ public class MyRewardsAdapter extends RecyclerView.Adapter<MyRewardsAdapter.View
             }else {
                 coupanTitle.setText("FLAT Rs."+discORamt+" OFF");
             }
-            final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMMM yyyy");
+            final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
             if(alreadyUsed){
                 coupanExpiryDate.setText("Already Used");

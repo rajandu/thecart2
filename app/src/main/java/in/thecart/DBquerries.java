@@ -578,10 +578,10 @@ public class DBquerries {
                                                                 ,documentSnapshot.get("lower_limit").toString()
                                                                 ,documentSnapshot.get("percentage").toString()
                                                                 ,documentSnapshot.get("body").toString()
-                                                                ,(Date) documentSnapshot.get("validity")
+                                                                ,(Date) documentSnapshot.getTimestamp("validity").toDate()
                                                                 ,(boolean)documentSnapshot.get("alreadyUsed")
                                                         ));
-                                                    }else if(documentSnapshot.get("type").toString().equals("Flat Rs.* OFF") && lastseendate.before(documentSnapshot.getDate("validity"))){
+                                                    }else if(lastseendate.before(documentSnapshot.getDate("validity"))){
                                                         rewardModelList.add(new RewardModel(
                                                                 documentSnapshot.getId()
                                                                 ,documentSnapshot.get("type").toString()
@@ -589,7 +589,7 @@ public class DBquerries {
                                                                 ,documentSnapshot.get("lower_limit").toString()
                                                                 ,documentSnapshot.get("amount").toString()
                                                                 ,documentSnapshot.get("body").toString()
-                                                                ,(Date)documentSnapshot.get("validity")
+                                                                ,(Date) documentSnapshot.getTimestamp("validity").toDate()
                                                                 ,(boolean)documentSnapshot.get("alreadyUsed")
                                                         ));
                                                     }

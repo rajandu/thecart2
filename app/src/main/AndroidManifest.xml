@@ -20,7 +20,7 @@
         <activity android:name=".SearchActivity" />
         <activity android:name=".UpdateUserInfoActivity" />
         <activity android:name=".OTPverificationActivity" />
-        <activity android:name=".ViewAllActivity" />
+        <activity android:name=".ViewAllActivity"/>
         <activity android:name=".MyAddressesActivity" />
         <activity
             android:name=".AddAddressActivity"

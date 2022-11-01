@@ -192,7 +192,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             documentSnapshot = task.getResult();
 
-                            firebaseFirestore.collection("PRODUCTS").document(productID).collection("QUANTITY").orderBy("time", Query.Direction.ASCENDING).get()
+                            firebaseFirestore.collection("PRODUCTS").document(productID).collection("QUANTITY")
+                                    .orderBy("time", Query.Direction.ASCENDING).get()
                                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                                         @Override
                                         public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -226,8 +227,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
                                                     codIndicator.setVisibility(View.INVISIBLE);
                                                     tvcodIndicator.setVisibility(View.INVISIBLE);
                                                 }
-                                                rewardTitle.setText((long) documentSnapshot.get("free_coupans") + documentSnapshot.get("free_coupan_title").toString());
-                                                rewardBody.setText(documentSnapshot.get("free_coupan_body").toString());
+                                                rewardTitle.setText((long) documentSnapshot.get("free_coupans") + documentSnapshot.get("free_coupans_title").toString());
+                                                rewardBody.setText(documentSnapshot.get("free_coupans_body").toString());
 
                                                 if ((boolean) documentSnapshot.get("use_tab_layout")) {
                                                     productDetailsTabsContainer.setVisibility(View.VISIBLE);
