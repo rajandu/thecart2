@@ -46,14 +46,14 @@ public class SplashActivity extends AppCompatActivity {
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-                           if(task.isSuccessful()){
-                               Intent mainintent = new Intent(SplashActivity.this, MainActivity.class);
-                               startActivity(mainintent);
-                               finish();
-                           }else {
-                               String error=task.getException().getMessage();
-                               Toast.makeText(SplashActivity.this,error,Toast.LENGTH_SHORT).show();
-                           }
+                            if(task.isSuccessful()){
+                                Intent mainintent = new Intent(SplashActivity.this, MainActivity.class);
+                                startActivity(mainintent);
+                                finish();
+                            }else {
+                                String error=task.getException().getMessage();
+                                Toast.makeText(SplashActivity.this,error,Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
         }

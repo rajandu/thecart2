@@ -74,6 +74,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="27 ratings "
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -337,6 +338,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="12"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="10sp" />
 
@@ -346,6 +348,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="12"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="10sp" />
 
@@ -354,6 +357,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="@color/black"
             android:text="0"
             android:textAlignment="center"
             android:textSize="10sp" />
@@ -364,6 +368,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="12"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="10sp" />
 
@@ -373,6 +378,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="8"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="10sp" />
     </LinearLayout>
@@ -392,6 +398,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="30"
+        android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/ratings_numbers_container"
         app:layout_constraintStart_toStartOf="@+id/ratings_numbers_container"
@@ -403,6 +410,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Your ratings "
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

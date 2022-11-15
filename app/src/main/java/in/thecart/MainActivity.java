@@ -399,8 +399,8 @@ public class MainActivity extends AppCompatActivity {
         if(fragementNo!=currentFragment) {
 
             if(fragementNo==REWARDS_FRAGMENT){
-                window.setStatusBarColor(Color.parseColor("#5b04b1"));
-                toolbar.setBackgroundColor(Color.parseColor("#5b04b1"));
+                window.setStatusBarColor(Color.parseColor("#D1AA48"));
+                toolbar.setBackgroundColor(Color.parseColor("#D1AA48"));
             }else {
                 window.setStatusBarColor(getResources().getColor(color.colorPrimary));
                 toolbar.setBackgroundColor(getResources().getColor(color.colorPrimary));
